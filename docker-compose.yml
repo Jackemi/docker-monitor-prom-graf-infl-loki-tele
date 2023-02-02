@@ -70,8 +70,8 @@ services:
       - ./telegraf.conf:/etc/telegraf/telegraf.conf
 
   influxdb:
-    image: influxdb:latest
-          #image: influxdb:1.8.3
+    #image: influxdb:latest
+    image: influxdb:1.8.3
     container_name: influxdb
     ports:
       - "8086:8086"
